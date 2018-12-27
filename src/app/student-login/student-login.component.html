@@ -1,0 +1,9 @@
+<div class="col-md-4" style="margin-left:35%">
+  <form [formGroup]="student_login" style="text-align:center" ngNativeValidate (ngSubmit)="Student_Login()">
+    <label>Student Name</label>
+    <input type="text" class="form-control" formControlName="studentname" required>
+    <label>Password</label>
+    <input type="password" class="form-control" formControlName="password" required>
+    <button type="submit" class="btn btn-info">submit</button>
+  </form>
+</div>
